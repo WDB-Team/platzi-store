@@ -15,12 +15,13 @@ script:
   - yarn build
 
 notifications:
+  slack: wdmespacio:ot0HtnPmr8RCydf500ZuO9h3
   email:
     recipients:
     - wdb.team.web@gmail.com
     - briangerardo114@gmail.com
     on_success: always
-    on_failier: always
+    on_failure: always
 
 deploy:
   provider: pages
